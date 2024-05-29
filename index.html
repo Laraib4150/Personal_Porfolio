@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laraib Momin - Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo.png" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>
+                    Hi, I'm <span>Laraib</span> <br />
+                    Momin From India
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Third-year Computer Science Engineering (CSE) student with a passion for leveraging technology to solve real-world problems.
+                    Skilled in programming, algorithms, and software development, with a keen interest in areas like artificial intelligence and data science.
+                    Excited to contribute to the advancement of technology and make an impact in the field of CSE.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Implementing Machine Learning Models.</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Data Structures</span><br>Problem solving skills.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun-Aug 2022</span><br>AIML, Amazon Web Services(AWS) Virtual Internship at AICTE.</li>
+                            <li><span>May-Jul 2023</span><br>Web Development Virtual Internship at CSRBOX.</li>
+                            <li><span>Jul-Aug 2023</span><br>Machine Learning Virtual Internship at Bharat Intern</li>
+                            <li><span>Jul-Aug 2023</span><br>Python Developer Virtual Internship at CodeClause</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-25</span><br>B.Tech CSE from Galgotias University, Greater Noida</li>
+                            <li><span>2020-21</span><br>12th from St.Pauls School, Rampur</li>
+                            <li><span>2018-19</span><br>10th from Holy Child School, Rampur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>As a web developer, I design, build, and maintain websites and web applications to ensure functionality, user experience, and performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Python Developer</h2>
+                    <p>As a Python developer, I write, test, and maintain code using Python to develop software applications, automate tasks, and manage data.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Java Developer</h2>
+                    <p>As a Java developer, I design, implement, and maintain applications using Java, ensuring robust, scalable, and efficient software solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="assets/images/work-1.jpg" alt="work-1">
+                    <div class="layer">
+                        <h3>Healthcare Chatbot</h3>
+                        <p>Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-2.jpg" alt="work-2">
+                    <div class="layer">
+                        <h3>Iris-Flower-Classification</h3>
+                        <p>We are predicting the different species on the length of there petals and sepals in jupyter lab.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-3.jpg" alt="work-3">
+                    <div class="layer">
+                        <h3>House-Pricing-Prediction</h3>
+                        <p>This is a Machine Learning model to predict house price using linear regression on jupyter.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-5.jpg" alt="work-5">
+                    <div class="layer">
+                        <h3>URL-Shortener</h3>
+                        <p>This is a python project to shorten the URL.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-6.jpg" alt="work-6">
+                    <div class="layer">
+                        <h3>Alarm-Clock</h3>
+                        <p>This is a python project in which we use few libraries to built an Alarm clock.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-7.jpg" alt="work-7">
+                    <div class="layer">
+                        <h3>Snake-Game</h3>
+                        <p>This repository contains a classic Snake Game implemented in Python using the Pygame library.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-8.jpg" alt="work-8">
+                    <div class="layer">
+                        <h3>Data-Compression</h3>
+                        <p>The process of encoding, restructuring or otherwise modifying data in order to reduce its size..</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>laraibmomin057@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91 969 0317 419</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Laraib4150"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/laraib_momin09?igsh=ZmZ3NndiN3RoZnV5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/LaraibMomin5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/laraib-momin-242330231/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST" >
+                        <input type="hidden" name="access_key" value="d03a3428-ed0f-4e68-b90b-c4ae1eada838">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ LaraibM. Made with <i class="fa-solid fa-heart"></i> by <a href="#">LaraibM</a></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
